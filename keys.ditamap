@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- 
+This map is a complete list of the external references.  It should be included with processing-role="resource-only"
+and at the end of the main map so that any content directly referenced in the main map file can be picked up ahead
+of these external links.
+-->
+<map processing-role="resource-only">
+    <title>Keys</title>
+    <keydef href="https://81001.org/concept/harm" format="html" keys="T1" scope="external" navtitle="Harm"/>
+    <keydef href="https://81001.org/concept/risk" format="html" keys="T2" scope="external" navtitle="Risk"/>
+    <keydef href="https://81001.org/concept/hazard" format="html" keys="T3" scope="external" navtitle="Hazard"/>
+    
+</map>

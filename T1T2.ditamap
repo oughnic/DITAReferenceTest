@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- 
+This is a map file to generate a publication with Topic 1 and Topic 2.
+It excludes Topic 3 even though Topic 1 and Topic 2 refer to Topic 3.
+
+The references to Topic 3 are picked up bu th ekeys.ditamap resource
+-->
+<map>
+    <title>With T1 and T2 but not T3</title>
+    <topicref href="topic_1.dita" keys="T1"/>
+    <topicref href="topic_2.dita" keys="T2"/>
+    
+    <!-- Pull in missing links -->
+    <mapref href="keys.ditamap" processing-role="resource-only"/>
+</map>
