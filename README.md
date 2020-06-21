@@ -14,3 +14,7 @@ Topics 1 and 2 both reference Topic 3 (which isn't in the driving map).
 |Topic_1.dita|A topic file with references to T2 and T3|
 |Topic_2.dita|A topic file with references to T1 and T3|
 |Topic_3.dita|A topic file with references to T1 and T2|
+
+## How it works
+When resolving the key references, the publisher first checks the included content for keys.  For topic 1 and Topic 2, the keys are already in T1T2.ditamap.
+When trying to resolve T3, the key is missing from the included topics but is defined in the keys.ditamap as a resource-only processing role.  This external resource is used for T3.
